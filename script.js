@@ -10,3 +10,12 @@ document.querySelector('.formulario').addEventListener('submit', function(e) {
     this.asunto.value = asunto;
     this.mensaje.value = mensaje;
 });
+
+const btn = document.getElementById('toggleDarkMode');
+let dark = false;
+
+btn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    dark = !dark;
+    btn.textContent = dark ? '☀️ Modo claro' : '🌙 Modo oscuro';
+});
