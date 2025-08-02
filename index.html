@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Rodrigo Inzaurralde</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="fonts.css">
+</head>
+<body>
+    <h1 id="titleId">Rodrigo Inzaurralde</h1>
+    <h2 id="subtituloId">Estudiante de Desarrollo Web y Ciberseguridad</h2>
+    <br>
+    <img id="perfilId" src="imagenes/perfil.jpeg" alt="Imagen de perfil">
+    <div id="parrafoId">
+        <p>Actualmente me encuentro en formación autodidacta en ciberseguridad, con un enfoque especial en el hacking ético, 
+            pentesting y análisis forense. Estoy preparándome para certificaciones como eJPTv2 y CompTIA Security+ con el objetivo 
+            de iniciar una carrera profesional en el ámbito de la ciberseguridad ofensiva y defensiva.
+            También estoy cursando desarrollo web en Jovenes a Programar de Ceibal.
+        </p>
+    </div>
+    <br>
+    <br>
+    <div id="habilidadesId">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Python</li>
+            <li>Bash</li>
+            <li>JavaScript</li>
+            <li>Linux</li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+        </ul>
+    </div>
+    <br>
+    <h2 id="proyectoId">Proyectos</h2>
+    <br>
+    <a href="https://github.com/Rodrigoinzaurralde/ruleta" target="_blank" style="text-decoration: none; color: inherit;" rel="noopener noreferrer">
+    <div class="proyectos">
+        <img id="ruletaId" src="imagenes/ruleta.png" alt="Imagen de la ruleta">
+        <p>Un simulador de apuestas en la ruleta basado en dos estrategias populares: Martingala e Inverse Labouchère, desarrollado en Bash. Este proyecto tiene como propósito demostrar de manera práctica y educativa que, al final, la casa siempre gana.
+        </p>
+    </div>
+    </a>
+    <br>
+    <a href="https://github.com/Rodrigoinzaurralde/htbmachines" target="_blank" style="text-decoration: none; color: inherit;" rel="noopener noreferrer">
+    <div class="proyectos">
+        <img id="htbId" src="imagenes/htbMachines.png" alt="Imagen de la htbMachines">
+        <p>Script Bash para buscar máquinas resueltas de Hack The Box basándose en el dataset público de s4vitar. 
+            Permite filtrar por nombre, IP, sistema operativo, dificultad, skills, certificaciones, y más.
+        </p>
+    </div>
+    </a>
+    <br>
+    <br>
+    <div class="contacto">
+        <h2>Contacto</h2>
+        <form class="formulario" action="https://formspree.io/f/movlnwpr" method="POST">
+            <input class="formulario_input" type="email" name="email" placeholder="ejemplo@mail.com">
+            <br>
+            <input class="formulario_input" type="text" name="asunto" placeholder="asunto" minlength="3">
+            <br>
+            <textarea class="formulario_input" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5" cols="40" minlength="3"></textarea>
+            <br>
+            <input class="formulario_input formulario_submit" type="submit" value="Enviar">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
