@@ -183,9 +183,9 @@ body.dark-mode .proyectos p {
 }
 #darkModeId {
     position: fixed;
-    top: 30px; /* un poco más abajo para no superponerse */
+    top: 30px; 
     right: 20px;
-    z-index: 3000; /* mayor que el banner */
+    z-index: 3000; 
     background: #222;
     color: #fff;
     border: none;

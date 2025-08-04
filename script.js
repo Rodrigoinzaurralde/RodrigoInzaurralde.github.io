@@ -19,7 +19,9 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // Sanitizar formulario
-    document.querySelector('.formulario').addEventListener('submit', function(e) {
+    document.querySelector('.formulario');
+    if (form) {
+        form.addEventListener('submit', function(e) {
         const email = this.email.value.replace(/</g, "&lt;").replace(/>/g, "&gt;");
         const asunto = this.asunto.value.replace(/</g, "&lt;").replace(/>/g, "&gt;");
         const mensaje = this.mensaje.value.replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -27,7 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
         this.email.value = email;
         this.asunto.value = asunto;
         this.mensaje.value = mensaje;
-    });
+        });
+    }
 
     // Botón modo oscuro
     const btn = document.getElementById('darkModeId');
