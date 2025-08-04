@@ -166,7 +166,9 @@ body.dark-mode footer {
 }
 body.dark-mode #parrafoId,
 body.dark-mode #habilidadesId,
+body.dark-mode #proyectoId,
 body.dark-mode .proyectos,
+body.dark-mode .contacto h2,
 body.dark-mode .contacto {
     background: #23272a;
     color: #e0e0e0;
@@ -179,7 +181,11 @@ body.dark-mode #habilidadesId li {
 body.dark-mode .proyectos p {
     color: #ccc;
 }
-#toggleDarkMode {
+#darkModeId {
+    position: fixed;
+    top: 30px; /* un poco más abajo para no superponerse */
+    right: 20px;
+    z-index: 3000; /* mayor que el banner */
     background: #222;
     color: #fff;
     border: none;
@@ -192,18 +198,18 @@ body.dark-mode .proyectos p {
     transition: background 0.2s, color 0.2s, box-shadow 0.2s;
 }
 
-#toggleDarkMode:hover {
+#darkModeId:hover {
     background: #00796b;
     color: #fff;
     box-shadow: 0 4px 16px rgba(0,0,0,0.13);
 }
 
-body.dark-mode #toggleDarkMode {
+body.dark-mode #darkModeId {
     background: #fff;
     color: #222;
 }
 
-body.dark-mode #toggleDarkMode:hover {
+body.dark-mode #darkModeId:hover {
     background: #004d40;
     color: #fff;
 }
@@ -221,4 +227,27 @@ body.dark-mode #toggleDarkMode:hover {
     margin-bottom: 1rem;
     margin-right: 0;
     }
+}
+
+#alerta-seguridad {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #ffcc00;
+    color: #222;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.1rem;
+    z-index: 2000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #e6b800;
+}
+
+
+#alerta-seguridad[style*="block"] ~ #titleId {
+    margin-top: 70px;
 }
