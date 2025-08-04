@@ -19,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
 
     // Sanitizar formulario
-    document.querySelector('.formulario');
+    const form = document.querySelector('.formulario');
     if (form) {
         form.addEventListener('submit', function(e) {
         const email = this.email.value.replace(/</g, "&lt;").replace(/>/g, "&gt;");
@@ -34,10 +34,12 @@ window.addEventListener('DOMContentLoaded', () => {
 
     // Botón modo oscuro
     const btn = document.getElementById('darkModeId');
+    if (btn) {
     let dark = false;
     btn.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
         dark = !dark;
         btn.textContent = dark ? '☀️ Modo claro' : '🌙 Modo oscuro';
     });
+    }
 });
